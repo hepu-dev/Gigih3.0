@@ -1,15 +1,4 @@
 
-### For testing, I recommend following the suggestions below
-1. Clone this repository
-2. Open it using a code editor
-3. Run the command `npm install` in the terminal
-4. Run the command `npm nodemon` in the terminal
-5. To run the project, use `npm start` command
-6. Open Postman, then import the available collection
-
-<br/>
-
-
 ## Routes Documentation
 
 ### `GET /playlist`
