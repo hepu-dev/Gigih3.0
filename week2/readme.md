@@ -5,9 +5,9 @@
 
 Retrieves the entire playlist.
 
-### `GET /playlist/:id`
+### `GET /playlist/mostplayed`
 
-Retrieves a song from the playlist by its ID.
+Retrieves a song from the playlist by mostplayed song.
 
 ### `POST /playlist`
 
