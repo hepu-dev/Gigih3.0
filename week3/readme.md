@@ -1,12 +1,13 @@
-###use MusicDB //membuat database MusicDB
+### use MusicDB //membuat database MusicDB
 
-####### membuat collections
+##### membuat collections
 db.createCollection("Songs")
 db.createCollection("Artists")
 db.createCollection("PopularSongs")
 
-####### memasukkan banyak data ke collection Songs
+###### memasukkan banyak data ke collection Songs
 <br/>
+```
 db.Songs.insertMany([
 {
   "title": "Song A",
@@ -85,7 +86,7 @@ db.Songs.insertMany([
 }]
 );
 
-####### memasukkan banyak data ke collection Artists
+###### memasukkan banyak data ke collection Artists
 <br/>
 db.Artists.insertMany([{
   "name": "Artist A",
@@ -164,7 +165,7 @@ db.Artists.insertMany([{
     
 );
 
-####### memasukkan banyak data ke collection PopularSongs
+###### memasukkan banyak data ke collection PopularSongs
 <br/>
 db.PopularSongs.insertMany([{
 
@@ -218,13 +219,14 @@ db.PopularSongs.insertMany([{
   "period": "2023-07-01 to 2023-07-15"
 }
 ]);
+```
 <br/>
 
-####### Untuk melihat semua data pada Songs
+###### Untuk melihat semua data pada Songs
 db.Songs.find()
 
-####### Untuk melihat semua data pada Artists
+###### Untuk melihat semua data pada Artists
 db.Artists.find()
 
-####### Untuk melihat semua data pada PoplarSongs
+###### Untuk melihat semua data pada PoplarSongs
 db.PopularSongs.find()
