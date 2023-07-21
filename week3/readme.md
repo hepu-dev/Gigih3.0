@@ -1,4 +1,5 @@
-### use MusicDB //membuat database MusicDB
+##### membuat database MusicDB
+`use MusicDB`
 
 ##### membuat collections
 `db.createCollection("Songs")`<br>
