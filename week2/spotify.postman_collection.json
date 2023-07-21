@@ -13,44 +13,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"var jsonData = pm.response.json();\r",
-							"var schema = {\r",
-							"    \"type\": \"object\",\r",
-							"    \"properties\":{\r",
-							"        \"name\":{\r",
-							"            \"type\" : \"string\"\r",
-							"        },\r",
-							"        \"job\":{\r",
-							"            \"type\" : \"string\"\r",
-							"        },\r",
-							"        \"id\":{\r",
-							"            \"type\" : \"string\"\r",
-							"        },\r",
-							"        \"createdAt\":{\r",
-							"            \"type\" : \"string\"\r",
-							"        }\r",
-							"    },\r",
-							"    \"required\":[\r",
-							"    \"name\",\r",
-							"    \"job\",\r",
-							"    \"id\",\r",
-							"    \"createdAt\"\r",
-							"    ]\r",
-							"}\r",
-							"\r",
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"pm.test(\"validate body data\", function () {\r",
-							"\r",
-							"    pm.expect(jsonData.name).to.eql(pm.variables.get(\"job\"));\r",
-							"    pm.expect(jsonData.job).to.eql(pm.variables.get(\"name\"));\r",
-							"});\r",
-							"\r",
-							"pm.test(\"Schema is valid\", function () {\r",
-							"    pm.response.to.have.jsonSchema(\"schema\");\r",
-							"});"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -70,7 +33,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:1001/playlist/1/play",
+					"raw": "http://localhost:1001/playlist/2/play",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -78,7 +41,7 @@
 					"port": "1001",
 					"path": [
 						"playlist",
-						"1",
+						"2",
 						"play"
 					]
 				}
@@ -92,7 +55,12 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "[\r\n    {\r\n        \"title\": \"Dia\",\r\n        \"artists\": [\r\n            \"Badu\",\r\n            \"Nanang\"\r\n        ],\r\n        \"url\": \"https://www.heru-spotify.dev/Dia\"\r\n    },\r\n    {\r\n        \"title\": \"Kamu\",\r\n        \"artists\": [\r\n            \"Arisu\",\r\n            \"Badar\"\r\n        ],\r\n        \"url\": \"https://www.heru-spotify.dev/Kamu\"\r\n    },\r\n    {\r\n        \"title\": \"Aku\",\r\n        \"artists\": [\r\n            \"Ar\",\r\n            \"Ba\"\r\n        ],\r\n        \"url\": \"https://www.heru-spotify.dev/Aku\"\r\n    }\r\n]"
+					"raw": "    {\r\n        \"title\": \"Aku\",\r\n        \"artists\": [\r\n            \"Dara\",\r\n            \"jona\"\r\n        ],\r\n        \"url\": \"https://www.heru-spotify.dev/Aku\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "http://localhost:1001/playlist",
