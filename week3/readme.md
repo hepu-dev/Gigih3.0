@@ -1,9 +1,9 @@
 ### use MusicDB //membuat database MusicDB
 
 ##### membuat collections
-db.createCollection("Songs")
-db.createCollection("Artists")
-db.createCollection("PopularSongs")
+`db.createCollection("Songs")`
+`db.createCollection("Artists")`
+`db.createCollection("PopularSongs")`
 
 ###### memasukkan banyak data ke collection Songs
 <br/>
@@ -85,9 +85,11 @@ db.Songs.insertMany([
   "album": "Album X"
 }]
 );
+```
 
 ###### memasukkan banyak data ke collection Artists
 <br/>
+```
 db.Artists.insertMany([{
   "name": "Artist A",
   "dateOfBirth": "1990-01-01",
@@ -164,9 +166,11 @@ db.Artists.insertMany([{
 }]
     
 );
+```
 
 ###### memasukkan banyak data ke collection PopularSongs
 <br/>
+```
 db.PopularSongs.insertMany([{
 
   "title": "Song A",
@@ -223,10 +227,10 @@ db.PopularSongs.insertMany([{
 <br/>
 
 ###### Untuk melihat semua data pada Songs
-db.Songs.find()
+`db.Songs.find()`
 
 ###### Untuk melihat semua data pada Artists
-db.Artists.find()
+`db.Artists.find()`
 
 ###### Untuk melihat semua data pada PoplarSongs
-db.PopularSongs.find()
+`db.PopularSongs.find()`
