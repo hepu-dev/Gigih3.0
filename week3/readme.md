@@ -1,9 +1,9 @@
 ### use MusicDB //membuat database MusicDB
 
 ##### membuat collections
-`db.createCollection("Songs")`
-`db.createCollection("Artists")`
-`db.createCollection("PopularSongs")`
+`db.createCollection("Songs")`<br>
+`db.createCollection("Artists")`<br>
+`db.createCollection("PopularSongs")`<br>
 
 ###### memasukkan banyak data ke collection Songs
 <br/>
