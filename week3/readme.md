@@ -7,7 +7,6 @@
 `db.createCollection("PopularSongs")`<br>
 
 ###### memasukkan banyak data ke collection Songs
-<br/>
 ```
 db.Songs.insertMany([
 {
@@ -89,7 +88,6 @@ db.Songs.insertMany([
 ```
 
 ###### memasukkan banyak data ke collection Artists
-<br/>
 ```
 db.Artists.insertMany([{
   "name": "Artist A",
@@ -168,9 +166,7 @@ db.Artists.insertMany([{
     
 );
 ```
-
 ###### memasukkan banyak data ke collection PopularSongs
-<br/>
 ```
 db.PopularSongs.insertMany([{
 
@@ -225,8 +221,6 @@ db.PopularSongs.insertMany([{
 }
 ]);
 ```
-<br/>
-
 ###### Untuk melihat semua data pada Songs
 `db.Songs.find()`
 
